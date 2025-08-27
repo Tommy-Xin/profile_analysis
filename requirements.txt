@@ -1,0 +1,10 @@
+streamlit
+adjustText
+pandas
+numpy
+matplotlib
+seaborn
+dashscope
+http
+platform
+os
