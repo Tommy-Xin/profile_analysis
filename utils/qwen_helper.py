@@ -6,7 +6,7 @@ from http import HTTPStatus
 def analyze_with_qwen(user_profiles: pd.DataFrame, api_key: str, model: str = "qwen-plus") -> str:
     """
     调用 Qwen 分析客户画像并生成逐用户催收话术。
-    :param user_profiles: DataFrame (TOP20用户画像)
+    :param user_profiles: DataFrame (TOP N用户画像)
     :param api_key: Qwen API Key
     :param model: Qwen 模型 (默认 qwen-plus)
     """
@@ -24,7 +24,7 @@ def analyze_with_qwen(user_profiles: pd.DataFrame, api_key: str, model: str = "q
 
 1. 用户编号或基本信息（用表格中的数据标识即可）
 2. 核心风险特征总结（简要2-3句话）
-3. 催收话术思路（比如缓和安抚型、直接强硬型、风险提醒型、情感沟通型等）
+3. 催收话术思路（以姓氏+先生/女生开头，比如缓和安抚型、直接强硬型、风险提醒型、情感沟通型等）
 4. 示例话术（2-3条，真实可直接使用）
 
 客户画像数据如下：
