@@ -6,7 +6,7 @@ from utils.scoring import CollectionScorer
 from utils.analyzer import CollectionAnalyzer
 from utils.font_config import set_chinese_font
 from utils.qwen_helper import analyze_with_qwen
-
+import matplotlib.pyplot as plt
 
 # set_chinese_font()
 plt.rcParams["font.family"] = ["DejaVu Sans", "sans-serif"]
