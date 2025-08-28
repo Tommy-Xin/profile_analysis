@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from adjustText import adjust_text  
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 黑体
-plt.rcParams['axes.unicode_minus'] = False    # 正常显示负号
+plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
 class CollectionAnalyzer:
     def __init__(self, df: pd.DataFrame, file_type: str = None):
         self.data = df

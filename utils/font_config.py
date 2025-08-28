@@ -1,8 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import platform, os
-plt.rcParams['font.sans-serif'] = ['SimHei']  # 黑体
-plt.rcParams['axes.unicode_minus'] = False    # 正常显示负号
+plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
 def set_chinese_font():
     system = platform.system()
     font_paths = []
