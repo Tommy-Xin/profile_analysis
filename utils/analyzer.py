@@ -11,7 +11,7 @@ from matplotlib import font_manager
 
 # # 设置为全局默认字体
 # plt.rcParams["font.family"] = font_name
-plt.rcParams["font.family"] = ["DejaVu Sans", "sans-serif"]
+
 class CollectionAnalyzer:
     def __init__(self, df: pd.DataFrame, file_type: str = None):
         self.data = df

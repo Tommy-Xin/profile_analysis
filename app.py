@@ -8,8 +8,8 @@ from utils.font_config import set_chinese_font
 from utils.qwen_helper import analyze_with_qwen
 import matplotlib.pyplot as plt
 
-# set_chinese_font()
-plt.rcParams["font.family"] = ["DejaVu Sans", "sans-serif"]
+set_chinese_font()
+# plt.rcParams["font.family"] = ["DejaVu Sans", "sans-serif"]
 st.set_page_config(page_title="催收分析系统", layout="wide")
 st.title("📊 催收用户画像分析系统")
 st.markdown("""
