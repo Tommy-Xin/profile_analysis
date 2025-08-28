@@ -4,6 +4,7 @@ import seaborn as sns
 import numpy as np
 from adjustText import adjust_text  
 from matplotlib import font_manager
+matplotlib.font_manager._rebuild()
 # 获取 STHeiti Light.ttf 的字体名称
 font_path = "STHeiti Light.ttc"
 font_name = font_manager.FontProperties(fname=font_path).get_name()
