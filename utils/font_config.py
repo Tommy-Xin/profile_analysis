@@ -10,7 +10,7 @@ def set_chinese_font():
     elif system == "Darwin":  # macOS
         font_paths = ["/System/Library/Fonts/STHeiti Light.ttc"]
     else:  # Linux
-        font_paths = ["/usr/share/fonts/truetype/wqy/wqy-zenhei.ttc"]
+        font_paths = ["STHeiti Light.ttc"]
 
     font_path = None
     for path in font_paths:
