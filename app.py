@@ -6,6 +6,27 @@ from utils.scoring import CollectionScorer
 from utils.analyzer import CollectionAnalyzer
 from utils.font_config import set_chinese_font
 from utils.qwen_helper import analyze_with_qwen
+# 引入在线中文字体（以 Noto Sans SC 为例，可替换为其他支持的字体）
+st.markdown("""
+<style>
+@font-face {
+    font-family: 'Heiti TC';
+    src: url('https://fonts.gstatic.com/s/notosanssc/v28/k3k702ZOKiLJc3WVjuplzK4raN77EGt5rU334E9Az5Y.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 应用到所有元素 */
+* {
+    font-family: 'Heiti TC', sans-serif !important;
+}
+
+/* 针对 Streamlit 特定组件单独设置（避免被默认样式覆盖） */
+.stMarkdown, .stText, .stTitle, .stHeader, .stSubheader, .stButton > button {
+    font-family: 'Heiti TC', sans-serif !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 set_chinese_font()
 
