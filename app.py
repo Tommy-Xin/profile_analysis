@@ -6,6 +6,12 @@ from utils.scoring import CollectionScorer
 from utils.analyzer import CollectionAnalyzer
 from utils.font_config import set_chinese_font
 from utils.qwen_helper import analyze_with_qwen
+
+
+set_chinese_font()
+
+st.set_page_config(page_title="催收分析系统", layout="wide")
+
 # 引入在线中文字体（以 Noto Sans SC 为例，可替换为其他支持的字体）
 st.markdown("""
 <style>
@@ -28,9 +34,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-set_chinese_font()
-
-st.set_page_config(page_title="催收分析系统", layout="wide")
 st.title("📊 催收用户画像分析系统")
 
 st.markdown("""
