@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
 import platform, os
-plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
+#plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
 def set_chinese_font():
     system = platform.system()
     font_paths = []

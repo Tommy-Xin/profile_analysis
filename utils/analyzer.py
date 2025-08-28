@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from adjustText import adjust_text  
-plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
+#plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
 class CollectionAnalyzer:
     def __init__(self, df: pd.DataFrame, file_type: str = None):
         self.data = df
