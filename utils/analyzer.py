@@ -3,7 +3,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from adjustText import adjust_text  
-#plt.rcParams["font.family"] = ["Arial Unicode MS", "Helvetica", "Arial", "sans-serif"]
+# 获取 STHeiti Light.ttf 的字体名称
+font_path = "STHeiti Light.ttf"
+font_name = font_manager.FontProperties(fname=font_path).get_name()
+
+# 设置为全局默认字体
+plt.rcParams["font.family"] = font_name
 class CollectionAnalyzer:
     def __init__(self, df: pd.DataFrame, file_type: str = None):
         self.data = df
