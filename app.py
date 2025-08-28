@@ -12,7 +12,6 @@ set_chinese_font()
 
 st.set_page_config(page_title="催收分析系统", layout="wide")
 st.title("📊 催收用户画像分析系统")
-
 st.markdown("""
 欢迎使用 **催收用户画像分析系统** 🎉  
 
@@ -30,7 +29,6 @@ model_choice = st.sidebar.selectbox(
     ["qwen-turbo", "qwen-plus", "qwen-max"],
     index=1
 )
-
 if api_key:
     st.session_state["qwen_api_key"] = api_key
     st.session_state["qwen_model"] = model_choice
